@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -12,63 +12,66 @@
 <div class="formContainer">
 
     <div class="formWrapper">
-    <h1 class="form-title">Contact form</h1>
-    <p class="description">please fill in your information and we'll be sending your order</p>
+        <h1 class="form-title">Contact form</h1>
+        <p class="description">please fill in your information and we'll be sending your order</p>
 
-    <form>
-        <ul class="wrapper">
-            <li class="form-row">
-                <label for="name">Your name</label>
-                <div class="inputs name">
-                    <input type="text" id="name" placeholder="first name" autofocus pattern="[A-Z][a-z]{1,64}">
-                    <input name="lastName" type="text" placeholder="last name" pattern="[A-Z][a-z]{1,64}">
-                </div>
-            </li>
+        <form>
+            <ul class="wrapper">
+                <li class="form-row">
+                    <label for="name">Your name</label>
+                    <div class="inputs name">
+                        <input type="text" id="name" placeholder="first name" autofocus pattern="[A-Z][a-z]{1,64}">
+                        <input name="lastName" type="text" placeholder="last name" pattern="[A-Z][a-z]{1,64}">
+                    </div>
+                </li>
 
-            <li class="form-row">
-                <label>Your email</label>
-                <div class="inputs">
-                    <input name="email" id="userEmail" type="email" placeholder="your_mail@mail.com">
-                </div>
-            </li>
+                <li class="form-row">
+                    <label>Your email</label>
+                    <div class="inputs">
+                        <input name="email" id="userEmail" type="email" placeholder="your_mail@mail.com">
+                    </div>
+                </li>
 
-            <li class="form-row">
-                <label for="num">Phone *</label>
-                <div class="inputs">
-                    <input id="num" type="tel" name="phone" required placeholder="000" pattern="[0-9]{3}">
-                    <input type="tel" name="phone" required placeholder="000" pattern="[0-9]{3}">
-                    <input type="tel" name="phone" required placeholder="0000" pattern="[0-9]{4}">
-                </div>
-            </li>
+                <li class="form-row">
+                    <label for="num">Phone *</label>
+                    <div class="inputs">
+                        <input id="num" type="tel" name="phone" required placeholder="000" pattern="[0-9]{3}">
+                        <input type="tel" name="phone" required placeholder="000" pattern="[0-9]{3}">
+                        <input type="tel" name="phone" required placeholder="0000" pattern="[0-9]{4}">
+                    </div>
+                </li>
 
-            <li class="form-row">
-                <label>Message subject *</label>
-                <div class="inputs">
-                    <select name="message_subject" required>
-                        <option value="other">Other</option>
-                        <option value="Boom shakalak">Boom shakalak! Let’s get started.</option>
-                        <option value="As You Wish">As You Wish</option>
-                        <option value="Look what you did, you little jerk…”">Look what you did, you little jerk…”</option>
-                    </select>
-                </div>
-            </li>
+                <li class="form-row">
+                    <label>Message subject *</label>
+                    <div class="inputs">
+                        <select name="message_subject" required>
+                            <option value="">Other</option>
+                            <option value="Boom shakalak">Boom shakalak! Let’s get started.</option>
+                            <option value="As You Wish">As You Wish</option>
+                            <option value="Look what you did, you little jerk…”">Look what you did, you little jerk…”
+                            </option>
+                        </select>
+                    </div>
+                </li>
 
-            <li class="form-row">
-                <label>Message *</label>
-                <div class="inputs">
-                    <textarea name="message" required></textarea>
-                </div>
-            </li>
+                <li class="form-row">
+                    <label>Message *</label>
+                    <div class="inputs">
+                        <textarea name="message" required></textarea>
+                    </div>
+                </li>
 
-            <li><hr></li>
+                <li>
+                    <hr>
+                </li>
 
-            <li class="form-row">
-                <div class="inputs">
-                    <button type="submit">submit form</button>
-                </div>
-            </li>
-        </ul>
-    </form>
+                <li class="form-row">
+                    <div class="inputs">
+                        <button type="submit">submit form</button>
+                    </div>
+                </li>
+            </ul>
+        </form>
     </div>
 
 </div>
